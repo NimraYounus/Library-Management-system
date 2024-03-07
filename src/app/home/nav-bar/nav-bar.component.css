@@ -1,0 +1,12 @@
+.btn-info:hover {
+    background-color: transparent !important;
+    border: 2px silver #0dcaf0;
+    color: #0dcaf0;
+  }
+  .btn-outline-info:hover {
+    color: white !important;
+  }
+  .white-color {
+    color: white;
+  }
+  

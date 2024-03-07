@@ -1,0 +1,43 @@
+.side-nav-content {
+  margin: 10px !important;
+  width: 230px;
+  color: white;
+}
+.nav-list {
+  list-style: none;
+  height: 100% !important;
+  padding: 0% !important;
+  margin-bottom: 0% !important;
+}
+.nav-list-item {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-left: 10px;
+}
+.nav-list-item p {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.nav-list-item:hover {
+  color: white;
+  width: 100%;
+}
+.nav-list-item:hover a {
+  color: white;
+}
+.nav-list-open .nav-list-item:hover {
+  background-color: rgb(172, 168, 168);
+  border-radius: 10px;
+}
+.text {
+  /* Basic button styling */
+  display: inline-block;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}

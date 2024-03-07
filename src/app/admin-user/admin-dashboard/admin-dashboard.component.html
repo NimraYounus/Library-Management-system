@@ -1,0 +1,19 @@
+<div class="container-fluid g-0">
+  <app-admin-navbar
+    (sideNavToggled)="sideNavStatus = $event"
+  ></app-admin-navbar>
+  <main>
+    <app-admin-sidebar
+      [ngClass]="{ 'app-sidebar': sideNavStatus }"
+      [sideNavStatus]="sideNavStatus"
+      (routerLink)="onRouterLink($event)"
+    ></app-admin-sidebar>
+    <div
+      [ngClass]="{ 'display-area-shrink': sideNavStatus }"
+      class="display-sideBar"
+    >
+      <router-outlet></router-outlet>
+      <p *ngIf="selectedRouterLink">{{ selectedRouterLink }}</p>
+    </div>
+  </main>
+</div>

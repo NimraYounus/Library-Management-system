@@ -1,0 +1,15 @@
+<div class="side-nav-content">
+  <ul class="nav-list" [ngClass]="{ 'nav-list-open': sideNavStatus }">
+    <li *ngFor="let listItems of list">
+      <span
+        class="nav-list-item btn"
+        (click)="showSelectedListItem(listItems.routerLink)"
+      >
+        <span class="material-icons text-white">{{ listItems.icon }}</span>
+        <span
+          ><p class="text text-white mt-3">{{ listItems.name }}</p></span
+        >
+      </span>
+    </li>
+  </ul>
+</div>

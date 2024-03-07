@@ -1,0 +1,37 @@
+.cover-img {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-color: white !important;
+    background-image: url(/src/assets/images/cover-image.jpg);
+  }
+  .main-cover-heading {
+    font-size: 48px !important;
+    font-weight: 900;
+    color: #0dcaf0;
+  }
+  .mat-icon-book {
+    color: white !important;
+    font-size: 20px !important;
+  }
+  .btn-white {
+    color: black !important;
+    font-size: 16px !important;
+    background-color: white !important;
+  }
+  .btn-white:hover {
+    background-color: transparent !important;
+    border: 2px solid white !important;
+    color: white !important;
+  }
+  .btn-info:hover {
+    background-color: transparent !important;
+    border: 2px silver #0dcaf0;
+    color: #0dcaf0;
+  }
+  .btn-outline-info:hover {
+    color: white !important;
+  }
+  .white-color {
+    color: white;
+  }
+  
