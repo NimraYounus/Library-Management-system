@@ -10,7 +10,7 @@ export class LoginComponent {
   constructor(private router: Router) {}
 
   onLogin() {
-    this.router.navigate(['/admin/admin-dashboard']);
+    this.router.navigate(['admin']);
   }
 
   onSignUp() {
