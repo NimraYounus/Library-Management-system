@@ -11,24 +11,26 @@ import { TermsConditionComponent } from './admin-sidebar/sideBar-item/terms-cond
 import { SettingsComponent } from './admin-sidebar/sideBar-item/settings/settings.component';
 
 const routes: Routes = [
+  { path: 'admin', redirectTo: 'admin-dashboard', pathMatch: 'full' },
   {
     path: 'admin-dashboard',
     component: AdminDashboardComponent,
-    children: [
-      { path: 'admin-home', component: AdminHomeComponent },
-      { path: 'analytics', component: AnalyticsComponent },
-      { path: 'books', component: BooksComponent },
-      { path: 'add-books', component: AddBooksComponent },
-      { path: 'issue-books', component: IssueBookComponent },
-      { path: 'members', component: MembersComponent },
-      { path: 'Terms-Conditions', component: TermsConditionComponent },
-      { path: 'settings', component: SettingsComponent },
-    ],
   },
+  { path: 'admin/home', component: AdminHomeComponent },
+  { path: 'admin/analytics', component: AnalyticsComponent },
+  { path: 'admin/books', component: BooksComponent },
+  { path: 'admin/add-books', component: AddBooksComponent },
+  { path: 'admin/issue-books', component: IssueBookComponent },
+  { path: 'admin/members', component: MembersComponent },
+  {
+    path: 'admin-dashoard/Terms-Conditions',
+    component: TermsConditionComponent,
+  },
+  { path: 'admin-dashoard/settings', component: SettingsComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AdminRountingModule {}

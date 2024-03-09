@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin-dashboard',
@@ -9,7 +10,10 @@ export class AdminDashboardComponent {
   sideNavStatus = false;
   selectedRouterLink = '';
 
+  constructor(private router: Router) {}
+
   onRouterLink(routerLink: string) {
     this.selectedRouterLink = routerLink;
+    this.router.navigateByUrl(routerLink); // Navigate to the selected router link
   }
 }
