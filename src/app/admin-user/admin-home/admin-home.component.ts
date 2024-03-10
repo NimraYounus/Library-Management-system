@@ -20,10 +20,10 @@ export class AdminHomeComponent {
     {
       icon: 'keyboard_return',
       name: 'NOT RETURNED',
-      quantity: '',
+      quantity: '55',
     },
     {
-      icon: 'Online Prediction',
+      icon: 'login',
       name: 'LOGGED IN USERS',
       quantity: '5',
     },
