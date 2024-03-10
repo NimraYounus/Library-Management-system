@@ -14,6 +14,7 @@ import { MembersComponent } from './admin-sidebar/sideBar-item/members/members.c
 import { TermsConditionComponent } from './admin-sidebar/sideBar-item/terms-condition/terms-condition.component';
 import { SettingsComponent } from './admin-sidebar/sideBar-item/settings/settings.component';
 import { AdminRountingModule } from './admin-user-routing.module';
+import { HighchartsChartModule } from 'highcharts-angular';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,6 @@ import { AdminRountingModule } from './admin-user-routing.module';
     TermsConditionComponent,
     SettingsComponent,
   ],
-  imports: [CommonModule, MatButtonModule, MatIconModule, AdminRountingModule],
+  imports: [CommonModule, MatButtonModule, MatIconModule, HighchartsChartModule, AdminRountingModule],
 })
 export class AdminUserModule {}
