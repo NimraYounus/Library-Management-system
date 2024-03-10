@@ -2,4 +2,17 @@
   color: black;
   background-color: white;
   height: 120px;
+  display: flex;
+  align-items: center;
+}
+.shadow {
+  box-shadow: 20px 20px 50px grey;
+}
+.icon-class {
+  background-color: red;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 20px 20px 50px 10px #0dcaf0 inset;
 }
