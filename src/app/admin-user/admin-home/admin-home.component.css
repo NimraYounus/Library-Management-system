@@ -6,7 +6,7 @@
   align-items: center;
 }
 .shadow {
-  box-shadow: 20px 20px 50px grey;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .icon-class {
   background-color: red;
@@ -15,4 +15,31 @@
   align-items: center;
   justify-content: center;
   box-shadow: 20px 20px 50px 10px #0dcaf0 inset;
+}
+.chart {
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+.main-card {
+  width: 49%;
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-right: 10px;
+}
+.sub-heading {
+  font-size: 14px;
+  font-weight: 500;
+}
+.scroll-table {
+  max-height: 340px;
+  overflow-y: auto;
+}
+
+.scroll-table::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
+.table-hover tbody tr:hover {
+  background-color: #0dcaf0;
 }

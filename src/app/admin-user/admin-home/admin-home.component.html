@@ -24,11 +24,40 @@
       </div>
     </div>
   </div>
-  <div>
-    <highcharts-chart
-      [Highcharts]="highcharts"
-      [options]="chartOptions"
-      style="width: 100%; height: 400px; display: block"
-    ></highcharts-chart>
+  <div class="d-flex">
+    <div class="main-card mr-3">
+      <highcharts-chart
+        [Highcharts]="highcharts"
+        [options]="chartOptions"
+        class="chart"
+      ></highcharts-chart>
+    </div>
+    <div class="main-card p-3">
+      <div class="sub-heading">Over Dues Histroy</div>
+      <div class="scroll-table">
+        <table class="table table-hover" style="font-size: 12px">
+          <thead>
+            <tr style="font-size: 14px; font-weight: 500">
+              <th scope="col">Member Id</th>
+              <th scope="col">Name</th>
+              <th scope="col">Book No</th>
+              <th scope="col">Due Days</th>
+              <th scope="col">Due Date</th>
+              <th scope="col">Fine</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let overDuesPeople of overDuesPeople">
+            <tr>
+              <td scope="col">{{ overDuesPeople.memberId }}</td>
+              <td scope="col">{{ overDuesPeople.memberName }}</td>
+              <td scope="col">{{ overDuesPeople.BookNo }}</td>
+              <td scope="col">{{ overDuesPeople.dueday }}</td>
+              <td scope="col">{{ overDuesPeople.duedate }}</td>
+              <td scope="col">{{ overDuesPeople.fine }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </div>
