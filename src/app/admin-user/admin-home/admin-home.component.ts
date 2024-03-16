@@ -138,4 +138,14 @@ export class AdminHomeComponent {
       },
     ],
   };
+  BooksList=[
+  {bookName:'Mangolia Palace', bookAuther:'Cristofer Bator', status:'Available'},
+]
+  editMember() {
+    //
+  }
+
+  deleteMember() {
+    //
+  }
 }

@@ -22,7 +22,6 @@
   display: block;
 }
 .main-card {
-  width: 49%;
   height: 400px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   margin-right: 10px;
@@ -31,15 +30,13 @@
   font-size: 14px;
   font-weight: 500;
 }
-.scroll-table {
-  max-height: 340px;
-  overflow-y: auto;
-}
-
-.scroll-table::-webkit-scrollbar {
-  width: 0;
-  background-color: transparent;
-}
 .table-hover tbody tr:hover {
   background-color: #0dcaf0;
+}
+.gray-color {
+  color: rgb(172, 168, 168);
+  cursor: pointer;
+}
+hr {
+  color: rgb(194, 189, 189);
 }

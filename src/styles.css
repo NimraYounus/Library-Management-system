@@ -17,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.ft-20px{
+.ft-20px {
   font-size: 20px !important;
 }
 h1,
@@ -307,6 +307,68 @@ svg#clouds {
   font-size: 32px !important;
   font-family: 700 !important;
 }
+.sub-main-heading {
+  font-size: 14px;
+  font-weight: 500;
+}
+.heading {
+  color: rgb(172, 168, 168);
+  font-size: 12px;
+}
 .text-color {
   color: #0dcaf0 !important;
+}
+.red-color {
+  color: red;
+}
+.green-color {
+  color: green;
+}
+
+.filled-background {
+  cursor: pointer;
+  width: 100px;
+  display: flex;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  font-weight: 500;
+  color: white;
+  background-color: #0dcaf0;
+}
+.outline-background {
+  cursor: pointer;
+  margin-left: 5px !important;
+  width: 100px;
+  display: flex;
+  border-radius: 30px;
+  border: 1px solid rgb(201, 198, 198);
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  padding: 4px;
+  color: rgb(172, 168, 168);
+  background-color: transparent;
+}
+.light-filled-background {
+  cursor: pointer;
+  width: 100px;
+  display: flex;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  font-weight: 500;
+  color: #0dcaf0;
+  background-color: #b0e6f1;
+}
+.scroll-table {
+  max-height: 340px;
+  overflow-y: auto;
+}
+
+.scroll-table::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
 }

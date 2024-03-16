@@ -24,15 +24,15 @@
       </div>
     </div>
   </div>
-  <div class="d-flex">
-    <div class="main-card mr-3">
+  <div class="d-flex col-md-12">
+    <div class="main-card col-md-6 mr-3">
       <highcharts-chart
         [Highcharts]="highcharts"
         [options]="chartOptions"
         class="chart"
       ></highcharts-chart>
     </div>
-    <div class="main-card p-3">
+    <div class="main-card p-3 col-md-6">
       <div class="sub-heading">Over Dues Histroy</div>
       <div class="scroll-table">
         <table class="table table-hover" style="font-size: 12px">
@@ -57,6 +57,62 @@
             </tr>
           </tbody>
         </table>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex col-md-12 my-4">
+    <div class="main-card p-3 col-md-8">
+      <div class="sub-heading">Members</div>
+      <div class="scroll-table">
+        <table class="table table-hover" style="font-size: 12px">
+          <thead>
+            <tr class="sub-main-heading">
+              <th scope="col"></th>
+              <th scope="col">Member Id</th>
+              <th scope="col">Name</th>
+              <th scope="col">Book Issued</th>
+              <th scope="col">Due Days</th>
+              <th scope="col">Fine</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let overDuesPeople of overDuesPeople">
+            <tr>
+              <td scope="col">
+                <img src="/src/assets/images/cover-image.jpg" />
+              </td>
+              <td scope="col">{{ overDuesPeople.memberId }}</td>
+              <td scope="col">{{ overDuesPeople.memberName }}</td>
+              <td scope="col">{{ overDuesPeople.BookNo }}</td>
+              <td scope="col">{{ overDuesPeople.dueday }}</td>
+              <td scope="col">
+                <div class="d-flex">
+                  <span class="material-icons gray-color" onclick="editMember()"
+                    >edit
+                  </span>
+                  <span
+                    class="material-icons gray-color"
+                    onclick="deleteMember()"
+                    >delete</span
+                  >
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="main-card col-md-4 p-3">
+      <div class="d-flex w-100">
+        <div class="filled-background">Top Books</div>
+        <div class="outline-background">New Arrivals</div>
+      </div>
+      <div class="scroll-table mt-4" *ngFor="let books of BooksList">
+        <div class="d-flex flex-column">
+          <div class="sub-main-heading mb-1">{{ books.bookName }}</div>
+          <div class="heading">{{ books.bookAuther }}</div>
+          <div class="light-filled-background mt-2">{{ books.status }}</div>
+          <hr />
+        </div>
       </div>
     </div>
   </div>
