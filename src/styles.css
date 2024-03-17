@@ -9,10 +9,7 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 :host {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 14px;
-  color: #333;
+  font-family: "Segoe UI", "Segoe UI Symbol";
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -303,13 +300,22 @@ svg#clouds {
     visibility: hidden;
   }
 }
+.bradcrums {
+  font-size: 11px;
+  color: black;
+  font-weight: 500;
+}
+.bradcrums-light {
+  font-size: 11px;
+  font-weight: 500;
+  color: rgb(172, 168, 168);
+}
 .main-heading {
-  font-size: 32px !important;
-  font-family: 700 !important;
+  font-size: 24px !important;
+  font-family: 800 !important;
 }
 .sub-main-heading {
   font-size: 14px;
-  font-weight: 500;
 }
 .heading {
   color: rgb(172, 168, 168);
@@ -334,14 +340,16 @@ svg#clouds {
   justify-content: center;
   padding: 4px;
   font-weight: 500;
+  padding: 8px 16px;
   color: white;
   background-color: #0dcaf0;
 }
 .outline-background {
   cursor: pointer;
-  margin-left: 5px !important;
+  margin-left: 13px !important;
   width: 100px;
   display: flex;
+  padding: 8px 16px;
   border-radius: 30px;
   border: 1px solid rgb(201, 198, 198);
   align-items: center;
@@ -367,8 +375,60 @@ svg#clouds {
   max-height: 340px;
   overflow-y: auto;
 }
-
 .scroll-table::-webkit-scrollbar {
   width: 0;
   background-color: transparent;
+}
+.border-none {
+  border: none;
+}
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.list-card {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.col {
+  color: black;
+  background-color: white;
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-class {
+  background-color: red;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 20px 20px 50px 10px #0dcaf0 inset;
+}
+.chart {
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+.main-card {
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-right: 10px;
+}
+.sub-heading {
+  font-size: 14px;
+  font-weight: 500;
+}
+.table-hover tbody tr:hover {
+  background-color: #0dcaf0;
+}
+.gray-color {
+  color: rgb(172, 168, 168);
+  cursor: pointer;
+}
+hr {
+  color: rgb(194, 189, 189);
 }
