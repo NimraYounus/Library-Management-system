@@ -378,12 +378,14 @@ svg#clouds {
   background-color: rgb(172, 168, 168);
   border: none;
   width: 80px;
+  height: 30px;
 }
 .btn-warning {
   background-color: rgb(77, 39, 77);
   color: #fff;
   border: none;
   width: 80px;
+  height: 30px;
 }
 .btn-warning:hover {
   background-color: rgb(133, 81, 133);
@@ -392,6 +394,7 @@ svg#clouds {
 
 .btn-danger {
   width: 80px;
+  height: 30px;
 }
 .scroll-table {
   max-height: 340px;
@@ -482,7 +485,10 @@ hr {
 }
 
 /* status buttons */
-.borrowed-button {
+.availabe-status,
+.borrowed-status,
+.renew-status,
+.reserve-status {
   cursor: pointer;
   width: 100px;
   display: flex;
@@ -491,6 +497,21 @@ hr {
   justify-content: center;
   padding: 4px;
   font-weight: 500;
-  color: green;
-  background-color: greenyellow;
+}
+
+.availabe-status {
+  color: rgb(30, 150, 30);
+  background-color: rgb(194, 228, 194);
+}
+.borrowed-status {
+  color: red;
+  background-color: rgb(240, 198, 185);
+}
+.renew-status {
+  color: rgb(129, 126, 126);
+  background-color: rgb(209, 207, 207);
+}
+.reserve-status {
+  color: rgb(77, 39, 77);
+  background-color: rgb(212, 185, 212);
 }
