@@ -51,9 +51,11 @@
         <tbody *ngFor="let overDuesPeople of overDuesPeople">
           <tr>
             <td scope="col">
-              <img 
-              class="rounded-circle" style="width: 50px ; height: 50px;"
-              src="assets/images/default_profile.jpeg" />
+              <img
+                class="rounded-circle justify-content-center d-flex"
+                style="width: 30px; height: 30px"
+                src="assets/images/default_profile.jpeg"
+              />
             </td>
             <td scope="col">{{ overDuesPeople.memberId }}</td>
             <td scope="col">{{ overDuesPeople.registerid }}</td>

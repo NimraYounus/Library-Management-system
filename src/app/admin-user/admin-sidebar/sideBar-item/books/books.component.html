@@ -1,1 +1,66 @@
-<p>books works!</p>
+<div class="container d-flex flex-column">
+  <span class="d-flex bradcrums">
+    <h3 class="bradcrums">Admin</h3>
+    <h3 class="bradcrums-light">/ Books</h3>
+  </span>
+  <div class="d-flex justify-content-end">
+    <div class="search-container">
+      <input type="text" placeholder="Search Member" class="search-input" />
+      <button class="search-button">
+        <span class="material-icons">search</span>
+      </button>
+    </div>
+  </div>
+  <div class="list-card mt-5">
+    <div class="scroll-table" style="height: 340px">
+      <table class="table table-hover" style="font-size: 12px">
+        <thead>
+          <tr class="sub-main-heading">
+            <th scope="col"></th>
+            <th scope="col">Member</th>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">Borrowed Date</th>
+            <th scope="col">Return date</th>
+            <th scope="col">Status</th>
+            <th scope="col" style="padding-left: 151px">Action</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let books of BooksList">
+          <tr>
+            <td>
+              <img
+                class="rounded-circle"
+                style="width: 30px; height: 30px"
+                src="assets/images/books.png"
+              />
+            </td>
+            <td scope="col">{{ books.memberName }}</td>
+            <td scope="col">{{ books.bookName }}</td>
+            <td scope="col">{{ books.bookAuther }}</td>
+            <td scope="col">{{ books.borrowedDate }}</td>
+            <td scope="col">{{ books.returnDate }}</td>
+            <td scope="col">{{ books.status }}</td>
+
+            <td scope="col" class="col-3" style="padding-left: 55px">
+              <div class="d-flex">
+                <span class="btn btn-danger ft-13px" onclick="editMember()">
+                  Return
+                </span>
+                <span
+                  class="btn btn-secondary ft-13px mx-2"
+                  onclick="editMember()"
+                >
+                  Renew
+                </span>
+                <span class="btn btn-warning ft-13px" onclick="editMember()">
+                  Reserve
+                </span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

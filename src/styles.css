@@ -17,6 +17,9 @@ body {
 .ft-20px {
   font-size: 20px !important;
 }
+.ft-13px {
+  font-size: 13px !important;
+}
 h1,
 h2,
 h3,
@@ -371,6 +374,25 @@ svg#clouds {
   color: #0dcaf0;
   background-color: #b0e6f1;
 }
+.btn-secondary {
+  background-color: rgb(172, 168, 168);
+  border: none;
+  width: 80px;
+}
+.btn-warning {
+  background-color: rgb(77, 39, 77);
+  color: #fff;
+  border: none;
+  width: 80px;
+}
+.btn-warning:hover {
+  background-color: rgb(133, 81, 133);
+  color: #fff;
+}
+
+.btn-danger {
+  width: 80px;
+}
 .scroll-table {
   max-height: 340px;
   overflow-y: auto;
@@ -431,4 +453,44 @@ svg#clouds {
 }
 hr {
   color: rgb(194, 189, 189);
+}
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 12px;
+  outline: none;
+  width: 300px !important;
+}
+
+.search-button {
+  background-color: transparent;
+  color: #0dcaf0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: -40px;
+}
+
+.material-icons {
+  font-size: 24px;
+}
+
+/* status buttons */
+.borrowed-button {
+  cursor: pointer;
+  width: 100px;
+  display: flex;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  font-weight: 500;
+  color: green;
+  background-color: greenyellow;
 }
