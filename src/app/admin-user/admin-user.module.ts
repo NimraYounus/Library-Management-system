@@ -15,6 +15,7 @@ import { TermsConditionComponent } from './admin-sidebar/sideBar-item/terms-cond
 import { SettingsComponent } from './admin-sidebar/sideBar-item/settings/settings.component';
 import { AdminRountingModule } from './admin-user-routing.module';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { BooksListComponent } from './admin-sidebar/sideBar-item/books/books-list/books-list.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { HighchartsChartModule } from 'highcharts-angular';
     MembersComponent,
     TermsConditionComponent,
     SettingsComponent,
+    BooksListComponent,
   ],
   imports: [CommonModule, MatButtonModule, MatIconModule, HighchartsChartModule, AdminRountingModule],
 })

@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./books.component.css'],
 })
 export class BooksComponent {
+  showBookStatus = false;
   BooksList = [
     {
       memberId: '#48964',
@@ -89,4 +90,8 @@ export class BooksComponent {
       status: 'Available',
     },
   ];
+
+  changeShowBookStatus() {
+    this.showBookStatus = !this.showBookStatus;
+  }
 }

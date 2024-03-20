@@ -1,5 +1,15 @@
 .tr td {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.width-btn {
+  width: 150px;
+}
+.list-card table tbody tr {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.list-card table tbody tr:hover {
+  background-color: lightgray;
+}

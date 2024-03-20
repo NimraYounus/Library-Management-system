@@ -3,19 +3,31 @@
     <h3 class="bradcrums">Admin</h3>
     <h3 class="bradcrums-light">/ Books</h3>
   </span>
-  <div class="d-flex justify-content-end">
-    <div class="search-container">
-      <input
-        type="text"
-        placeholder="Search Ex. ISBN,Title,Author,Member,etc"
-        class="search-input"
-      />
-      <button class="search-button">
-        <span class="material-icons">search</span>
-      </button>
+  <div class="d-flex justify-content-between">
+    <span
+      class="light-filled-background width-btn ft-13px"
+      (click)="changeShowBookStatus()"
+      >Show Books Status</span
+    >
+    <div class="d-flex justify-content-end">
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Search Ex. ISBN,Title,Author,Member,etc"
+          class="search-input"
+        />
+        <button class="search-button">
+          <span class="material-icons">search</span>
+        </button>
+      </div>
     </div>
   </div>
-  <div class="list-card mt-5">
+
+  <div
+    class="list-card mt-3 box"
+    *ngIf="showBookStatus"
+    style="transition: height 0.3s ease-in-out"
+  >
     <div class="scroll-table" style="height: 340px">
       <table class="table table-hover" style="font-size: 12px">
         <thead>
@@ -77,5 +89,8 @@
         </tbody>
       </table>
     </div>
+  </div>
+  <div class="mt-3">
+    <app-books-list></app-books-list>
   </div>
 </div>
