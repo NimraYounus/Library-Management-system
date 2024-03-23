@@ -1,1 +1,13 @@
 <h1>Top Categories</h1>
+<div class="w-100 book-catgory col-md-12">
+  <ng-container *ngFor="let booksCategories of booksCategories">
+    <div class="d-flex flex-column col-md-3">
+      <h3 class="heading">
+        {{ booksCategories.booksCategories }}
+      </h3>
+      <div class="book-card">
+        <img class="book-img" src="assets/images/books.png" />
+      </div>
+    </div>
+  </ng-container>
+</div>

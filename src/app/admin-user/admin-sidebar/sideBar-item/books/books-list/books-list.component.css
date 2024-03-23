@@ -1,0 +1,19 @@
+.heading {
+  font-size: 18px;
+  font-weight: 500;
+  color: #5f5c5c;
+}
+.book-card {
+  height: 350px;
+  /* width: 250px; */
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  box-shadow: 0px 0px 4px rgb(182, 181, 181);
+  margin: 8px;
+  margin-left: 0px;
+}
+.book-img {
+  height: 210px;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
