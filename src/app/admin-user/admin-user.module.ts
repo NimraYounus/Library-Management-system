@@ -16,6 +16,7 @@ import { SettingsComponent } from './admin-sidebar/sideBar-item/settings/setting
 import { AdminRountingModule } from './admin-user-routing.module';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { BooksListComponent } from './admin-sidebar/sideBar-item/books/books-list/books-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,13 @@ import { BooksListComponent } from './admin-sidebar/sideBar-item/books/books-lis
     SettingsComponent,
     BooksListComponent,
   ],
-  imports: [CommonModule, MatButtonModule, MatIconModule, HighchartsChartModule, AdminRountingModule],
+  imports: [
+    CommonModule,
+    MatButtonModule,
+    MatIconModule,
+    HighchartsChartModule,
+    AdminRountingModule,
+    HttpClientModule,
+  ],
 })
 export class AdminUserModule {}

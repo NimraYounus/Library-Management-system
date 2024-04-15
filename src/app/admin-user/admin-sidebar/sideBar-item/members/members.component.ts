@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UsersServicesService } from 'src/app/service/userServices/users-services.service';
 
 @Component({
   selector: 'app-members',
@@ -6,6 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./members.component.css'],
 })
 export class MembersComponent {
+  users: any;
+  constructor(userData: UsersServicesService) {
+    userData.getUsers().subscribe((data) => {
+      this.users = data;
+      console.warn('users:', this.users);
+    });
+  }
+
   overDuesPeople = [
     {
       memberId: '#48964',

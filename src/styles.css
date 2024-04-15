@@ -241,7 +241,13 @@ footer a {
   display: flex;
   align-items: center;
 }
-
+.overflow-y {
+  overflow-y: auto !important;
+}
+.overflow-y::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
 .icon-class {
   background-color: red;
   width: 60px;
